@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    border: 1px solid rgba(0, 0, 0, 0.261);
+    max-width: 700px;
+    min-height: 500px;
+    margin: 10px auto;
+}
+.tabs {
+    display: flex;
+    color: black;
+    text-align: center;
+}
+.tabs * {
+    border: 1px solid black;
+    border-radius: 0 50px 0 50px ;
+    background-color: rgba(67, 184, 162, 0.556);
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+ .tabs-items {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+.content-items {
+    margin-top: 50px;
+    display: none;
+    padding: 15px;
+    min-height: 150px;
+    text-align: center;
+    background-color: rgba(228, 225, 225, 0.72);
+}
+.content-items .content-text{
+    margin: 10% auto;
+    font-size: 22px;
+}
+.content-items a {
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+}
+.content-items a:hover {
+    transition: 1s ease;
+    font-weight: 800;
+}
+.tabs-items-active {
+    background-color: rgba(228, 225, 225, 0.72);
+}
+.content-items-active {
+    display: block;
+}
